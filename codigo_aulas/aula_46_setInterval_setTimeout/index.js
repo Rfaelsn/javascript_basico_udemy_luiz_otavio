@@ -6,7 +6,6 @@ function mostraHora() {
     })
 }
 
-
 // define o que vai ser executado e em quanto tempo
 //podemos armazenar em constantes
 const intervaloExec = setInterval( function(){
