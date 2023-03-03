@@ -1,8 +1,35 @@
-function funcao ([valor1, valor2, valor3, ...resto]){
-    console.log(valor1, valor2, valor3, resto);
-}
+const conta = (...args) =>{
+    console.log(args);
+};
 
-funcao(['1', '2', '3', '4' , '5'])
+conta('+', 0 , 20, 30, 40, 50);
+
+
+// operador rest como parâmetro
+// function conta (operador, acumulador, ...numeros){
+//     for (const numero of numeros) {
+
+//         if (operador === '+') acumulador += numero;
+
+//         if (operador === '-') acumulador -= numero;
+
+//         if (operador === '*') acumulador *= numero;
+
+//         if (operador === '/') acumulador /= numero;
+
+//     }
+
+//     console.log(acumulador);
+// }
+
+// conta('+', 0 , 20, 30, 40, 50);
+
+
+// function funcao ([valor1, valor2, valor3, ...resto]){
+//     console.log(valor1, valor2, valor3, resto);
+// }
+
+// funcao(['1', '2', '3', '4' , '5']);
 
 // atribuição via desestruturação de objetos em funções //
 // function funcao ({nome, sobrenome, idade}){
