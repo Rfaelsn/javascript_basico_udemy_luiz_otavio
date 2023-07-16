@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Formulário de Cadastro</h1>
+    <ul>
+      <li>Nenhum campo pode estar vazio</li>
+      <li>Usuário só poderá conter letras ou números</li>
+      <li>Usuário deverá ter entre 3 e 12 caracteres.</li>
+      <li>Senha deverá conter entre 6 a 12 caracteres</li>
+    </ul>
+    <form action="/" method="post" class="formulario">
+      <label>Nome</label>
+      <input type="text" class="validar">
+
+      <label>Sobrenome</label>
+      <input type="text" class="validar">
+
+      <label>Cpf</label>
+      <input type="text" class="validar cpf">
+
+      <label>Usuário</label>
+      <input type="text" class="validar usuario">
+
+      <label>Senha</label>
+      <input type="password" class="validar senha">
+
+      <label>Repetir Senha</label>
+      <input type="password" class="validar repetirSenha">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="./assets/js/validaCpf.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
